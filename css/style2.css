@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+}
+
+.bar h1 {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.bar img {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+}
+
+
+/* the name before the curly brackets is a SELECTOR */
+
+.bar p {
+    font-family: "Book Antiqua", Georgia, serif;
+    font-size: 1em;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+}
+
+.bar li {
+    font-family: "Book Antiqua", Georgia, serif;
+    font-size: 1em;
+    text-align: left;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bar {
+    flex: 1;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    transition: .5s ease;
+}
+
+.bar:hover {
+    flex: 1.5;
+}
+
+.bar:hover img {
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+#container {
+    display: flex;
+}
+
+#green {
+    background: #94B77C;
+}
+
+#beige {
+    background: #EFE9A7;
+}
+
+#burntOrange {
+    background: #FFB03B;
+}
+
+#maroon {
+    background: #ED5D3D;
+}
+
+@media (max-width: 1000px) {
+    #container {
+        flex-direction: column;
+    }
+    .bar img {
+        width: 1000px;
+    }
+    .msg {
+        display: block;
+        text-align: center;
+    }
+}

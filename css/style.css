@@ -1,0 +1,84 @@
+body{
+  background-image: url(https://prod-academy-wp-content-uploads.s3.amazonaws.com/2016/03/Breakfast.jpg);
+  background-size: cover;
+}
+#heading {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0 150px 0;
+  background-attachment: fixed;
+  background-position: center;
+  /*background-image: url(https://prod-academy-wp-content-uploads.s3.amazonaws.com/2016/03/Breakfast.jpg);*/
+  background-size: cover;
+  font-family: "Book Antiqua", Georgia, serif;font-size: 1em;
+  line-height: 2;
+}
+.content-blocks {
+  position: relative;
+}
+
+.content-block {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  max-width: 600px;
+  padding: 30px;
+  position: relative;
+  color: #000;
+}
+@media (min-width: 850px) {
+  .content-block {
+    margin-left: -350px;
+  }
+}
+.content-block:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  mix-blend-mode: overlay;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+.content-block h2 {
+  margin: 0;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-size: 30px;
+	font-style: normal;
+  line-height: 1;
+  font-weight: bolder;
+}
+.content-block p {
+  letter-spacing: 1px;
+  padding-right: 20px;
+}
+.content-block--small {
+  position: absolute;
+  margin-left: 0;
+  margin-right:-50px;
+  max-width: 300px;
+  padding-right: 10px;
+  bottom: -140px;
+}
+@media (min-width: 850px) {
+  .content-block--small {
+    right: -80%;
+    bottom: -120px;
+  }
+}
+.content-block--small p {
+  padding-right: 0;
+}
